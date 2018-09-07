@@ -1,18 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import TEMP_FORM from "./components/TEMP_FORM";
+import Convertion_CtoF from "./components/Convertion_CtoF";
 
 class App extends Component {
+  state = {
+    temp: 0
+  };
+
+  getValue = value => {
+    this.setState({
+      temp: value
+    });
+  };
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <TEMP_FORM getValue={this.getValue} />
+        <Convertion_CtoF temperature={this.state.temp} />
       </div>
     );
   }
