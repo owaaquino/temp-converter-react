@@ -6,7 +6,8 @@ import Convertion_CtoF from "./components/Convertion_CtoF";
 
 class App extends Component {
   state = {
-    temp: 0
+    temp: 0,
+    tempSettings: 0
   };
 
   getValue = value => {
