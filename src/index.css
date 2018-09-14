@@ -4,6 +4,27 @@ body {
   font-family: sans-serif;
 }
 
+/* ROOT */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div#root {
+  margin: 100px auto;
+  width: 50%;
+  height: 60vh;
+  background-color: #cccccc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+ }
+
+
+/* FOOTER */
 footer {
   text-align: center;
 }
