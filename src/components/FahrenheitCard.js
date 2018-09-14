@@ -11,7 +11,8 @@ class FahrenheitCard extends React.Component {
     let newFahrenheit = this.tempToConvertRef.current.value;
     let newCelsius;
     newCelsius = ((newFahrenheit - 32) * 5) / 9;
-    this.props.getNewTempValue(newCelsius, newFahrenheit);
+    const rounded = Math.round(newCelsius * 1000) / 1000;
+    this.props.getNewTempValue(rounded, newFahrenheit);
   };
 
   render() {
