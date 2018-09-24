@@ -8,8 +8,8 @@ import CelsiusCard from "./components/CelsiusCard";
 
 class App extends Component {
   state = {
-    fahrenheit: "",
-    celsius: ""
+    fahrenheit: 0,
+    celsius: 0
   };
 
   // getValue = value => {
