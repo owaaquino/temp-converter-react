@@ -14,14 +14,10 @@ Another Temperature Converter
 - CSS
 - HTML
 
-**Assets:**
-
-- Font -
-
 **Live links:**
 
-- Codepen -
-- Hosted with Netlify -
+- Codepen - not yet
+- Hosted with Netlify - [https://quirky-brown-da843b.netlify.com/](https://quirky-brown-da843b.netlify.com/)
 
 # Notes
 
